@@ -1,0 +1,10 @@
+execution:
+- executor: jmeter
+  concurrency: 100
+  ramp-up: 30s
+  hold-for: 90s
+  scenario: petstore
+
+scenarios:
+  petstore:
+    script: petStore.jmx
